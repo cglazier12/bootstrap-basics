@@ -1,0 +1,22 @@
+.navbar {
+    background: rgb(179,212,252);
+    /* I strongly encourage you to learn to write gradients by hand if interested, but i made this here: https://cssgradient.io/ */
+    background: linear-gradient(90deg, rgba(179,212,252,1) 0%, rgba(86,59,131,0.4) 75%);
+}
+
+.row {
+    margin: 2rem 0;
+}
+
+.column {
+    border: solid 1px rgb(179,212,252);
+}
+
+/*
+    playground.html styles below
+    likely you would want base styles and styling for components found on multiple pages in index.css and break up page specific styling into the own stylesheet
+ */
+
+.playground .btn {
+    margin: 2rem 0;
+}

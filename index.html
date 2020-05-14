@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <title>Hello, world!</title>
+</head>
+<body>
+<div class="container homepage">
+  <header>
+    <!-- this is a very common layout for what a navbar might look like, this example was taken right from the website with a few changes made -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <!-- This is just an img wrapped in an <a> tag-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">Docs<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <!-- these <spans> simply add styling to the active link. I personally prefer to style individual links myself with css but you can leverage some functionality with bootstrap classes alone -->
+            <a class="nav-link" href="/assets/html/playground.html">Playground<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Another Link<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation end -->
+  </header>
+
+  <div class="row d-flex justify-content-between">
+    <div class="column col-2">
+      <p>Col 1: I have a width of two columns on all screens</p>
+      <p>"col-2"</p>
+    </div>
+    <div class="column col-xl-3 col-2">
+      <p>Col 2: I have a width of three columns on X-large screens and width of two on smaller screens</p>
+      <p>"col-xl-3 col-2"</p>
+    </div>
+
+    <div class="column col-xl-3 col-2">
+      <p>Col 3: I have a width of three columns on X-large screens and width of two on smaller screens</p>
+      <p>"col-xl-3 col-2"</p>
+    </div>
+    <div class="column col-2">
+      <p>Col 4: I have a width of two columns on all screens</p>
+      <p>"col-2"</p>
+    </div>
+  </div>
+
+    <!-- new row class. Notice we dont have to nest columns in rows however columns MUST BE THE DIRECT DESCENDANT OF A ROW -->
+  <div class="row">
+
+    <div class="alert alert-info col" role="alert">
+      Notice how the widths still change as you make the width of the screen smaller
+      <br>
+      This is because bootstrap is reactive. As the width of the container changes, so must the width of the row and therefore the width of the columns
+    </div>
+  </div>
+
+  <div class="row justify-content-md-center">
+    <div class="column col col-lg-2">
+      1 of 3
+    </div>
+    <div class="column col-md-auto">
+      Variable width content
+    </div>
+    <div class="column col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+  <div class="column row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="column col-md-auto">
+      Variable width content
+    </div>
+    <div class="column col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- mx-auto is a neat class it will apply an automatic margin based on the space between the applied element and the next relatively positioned parent element -->
+    <div class="alert alert-info col-xl-4 col-lg-6 col-8 mx-auto" role="alert">
+      Hmm interesting, I wonder why these columns behave like this.
+      <br>
+      Maybe I should <a href="https://getbootstrap.com/docs/4.5/layout/grid/">Click Here</a> and read the documentation
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- mx-auto is a neat class it will apply an automatic margin based on the space between the applied element and the next relatively positioned parent element -->
+    <div class="alert alert-info col" role="alert">
+      This is the sixth row in the bootstrap container
+      <br>
+      There is no limit to how many rows you can have. However you should always follow <a href="https://uxplanet.org/how-the-bootstrap-4-grid-works-a1b04703a3b7">These 3 rules</a>
+      <br>
+      This article in the link above is a good go to if you are ever confused or need a refresher on the bootstrap grid system
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
